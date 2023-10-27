@@ -5,7 +5,7 @@ import { loadTranslations } from '@angular/localize';
 import { AppComponent } from './app.component';
 
 async function initializeApp(): Promise<any> {
-  const response = await fetch('/ru.json');
+  const response = await fetch('/assets/ru.json');
   const { translations } = await response.json();
   loadTranslations(translations);
 }
